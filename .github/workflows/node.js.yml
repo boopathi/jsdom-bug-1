@@ -17,4 +17,3 @@ jobs:
         node-version: 14.x
     - run: yarn
     - run: node index.js
-    - run: npm test
