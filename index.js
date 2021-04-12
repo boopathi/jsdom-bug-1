@@ -39,4 +39,9 @@ async function main() {
   console.log(results);
 }
 
-main().then(() => console.log("done"));
+main()
+  .then(() => console.log("done"))
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
